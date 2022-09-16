@@ -15,6 +15,7 @@
 		F6DC8D8428D47FEA006663A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DC8D8228D47FEA006663A9 /* LaunchScreen.storyboard */; };
 		F6DC8D8E28D49394006663A9 /* TrafficLightState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC8D8D28D49394006663A9 /* TrafficLightState.swift */; };
 		F6DC8D9028D49464006663A9 /* TrafficLightStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC8D8F28D49464006663A9 /* TrafficLightStateManager.swift */; };
+		F6DC8D9228D49D44006663A9 /* TrafficLightMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC8D9128D49D44006663A9 /* TrafficLightMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F6DC8D8528D47FEA006663A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6DC8D8D28D49394006663A9 /* TrafficLightState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightState.swift; sourceTree = "<group>"; };
 		F6DC8D8F28D49464006663A9 /* TrafficLightStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightStateManager.swift; sourceTree = "<group>"; };
+		F6DC8D9128D49D44006663A9 /* TrafficLightMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				F6DC8D8D28D49394006663A9 /* TrafficLightState.swift */,
 				F6DC8D8F28D49464006663A9 /* TrafficLightStateManager.swift */,
+				F6DC8D9128D49D44006663A9 /* TrafficLightMode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6DC8D7C28D47FE9006663A9 /* ViewController.swift in Sources */,
+				F6DC8D9228D49D44006663A9 /* TrafficLightMode.swift in Sources */,
 				F6DC8D7828D47FE9006663A9 /* AppDelegate.swift in Sources */,
 				F6DC8D9028D49464006663A9 /* TrafficLightStateManager.swift in Sources */,
 				F6DC8D8E28D49394006663A9 /* TrafficLightState.swift in Sources */,

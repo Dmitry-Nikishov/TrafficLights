@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,22 +13,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FeK-TD-APh">
-                                <rect key="frame" x="125.5" y="0.0" width="69" height="240"/>
+                                <rect key="frame" x="144" y="44" width="126" height="409"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qgc-WZ-i8E">
-                                        <rect key="frame" x="0.0" y="0.0" width="69" height="69.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="125.5"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFb-29-8te">
-                                        <rect key="frame" x="0.0" y="85.5" width="69" height="69"/>
+                                        <rect key="frame" x="0.0" y="141.5" width="126" height="126"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkO-ql-IzD">
-                                        <rect key="frame" x="0.0" y="170.5" width="69" height="69.5"/>
+                                        <rect key="frame" x="0.0" y="283.5" width="126" height="125.5"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
@@ -37,7 +37,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yT1-uB-dh5">
-                                <rect key="frame" x="121.5" y="338.5" width="77" height="43"/>
+                                <rect key="frame" x="144" y="658" width="126" height="43"/>
                                 <color key="backgroundColor" red="0.0" green="0.5" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>

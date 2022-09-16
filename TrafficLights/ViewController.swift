@@ -22,7 +22,7 @@ class ViewController: UIViewController {
             if let view = view {
                 view.layer.cornerRadius = view.layer.bounds.width / 2
                 view.clipsToBounds = true
-                view.alpha = 0.5
+                view.alpha = TrafficLightMode.off.rawValue
             }
         }
         
@@ -33,24 +33,24 @@ class ViewController: UIViewController {
         trafficLightManager.handler = { [weak self] currentState in
             switch currentState {
             case .redOn:
-                self?.redLightView.alpha = 1
-                self?.yellowLightView.alpha = 0.5
-                self?.greenLightView.alpha = 0.5
+                self?.redLightView.alpha = TrafficLightMode.on.rawValue
+                self?.yellowLightView.alpha = TrafficLightMode.off.rawValue
+                self?.greenLightView.alpha = TrafficLightMode.off.rawValue
                 
             case .yellowOn:
-                self?.redLightView.alpha = 0.5
-                self?.yellowLightView.alpha = 1
-                self?.greenLightView.alpha = 0.5
+                self?.redLightView.alpha = TrafficLightMode.off.rawValue
+                self?.yellowLightView.alpha = TrafficLightMode.on.rawValue
+                self?.greenLightView.alpha = TrafficLightMode.off.rawValue
 
             case .greenOn:
-                self?.redLightView.alpha = 0.5
-                self?.yellowLightView.alpha = 0.5
-                self?.greenLightView.alpha = 1
+                self?.redLightView.alpha = TrafficLightMode.off.rawValue
+                self?.yellowLightView.alpha = TrafficLightMode.off.rawValue
+                self?.greenLightView.alpha = TrafficLightMode.on.rawValue
 
             default:
-                self?.redLightView.alpha = 0.5
-                self?.yellowLightView.alpha = 0.5
-                self?.greenLightView.alpha = 0.5
+                self?.redLightView.alpha = TrafficLightMode.off.rawValue
+                self?.yellowLightView.alpha = TrafficLightMode.off.rawValue
+                self?.greenLightView.alpha = TrafficLightMode.off.rawValue
             }
         }
     }
