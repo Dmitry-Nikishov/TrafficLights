@@ -13,6 +13,8 @@
 		F6DC8D7F28D47FE9006663A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DC8D7D28D47FE9006663A9 /* Main.storyboard */; };
 		F6DC8D8128D47FEA006663A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DC8D8028D47FEA006663A9 /* Assets.xcassets */; };
 		F6DC8D8428D47FEA006663A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DC8D8228D47FEA006663A9 /* LaunchScreen.storyboard */; };
+		F6DC8D8E28D49394006663A9 /* TrafficLightState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC8D8D28D49394006663A9 /* TrafficLightState.swift */; };
+		F6DC8D9028D49464006663A9 /* TrafficLightStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC8D8F28D49464006663A9 /* TrafficLightStateManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F6DC8D8028D47FEA006663A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6DC8D8328D47FEA006663A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6DC8D8528D47FEA006663A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DC8D8D28D49394006663A9 /* TrafficLightState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightState.swift; sourceTree = "<group>"; };
+		F6DC8D8F28D49464006663A9 /* TrafficLightStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightStateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		F6DC8D7628D47FE9006663A9 /* TrafficLights */ = {
 			isa = PBXGroup;
 			children = (
+				F6DC8D8C28D4937D006663A9 /* Model */,
 				F6DC8D7728D47FE9006663A9 /* AppDelegate.swift */,
 				F6DC8D7928D47FE9006663A9 /* SceneDelegate.swift */,
 				F6DC8D7B28D47FE9006663A9 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				F6DC8D8528D47FEA006663A9 /* Info.plist */,
 			);
 			path = TrafficLights;
+			sourceTree = "<group>";
+		};
+		F6DC8D8C28D4937D006663A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6DC8D8D28D49394006663A9 /* TrafficLightState.swift */,
+				F6DC8D8F28D49464006663A9 /* TrafficLightStateManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +154,8 @@
 			files = (
 				F6DC8D7C28D47FE9006663A9 /* ViewController.swift in Sources */,
 				F6DC8D7828D47FE9006663A9 /* AppDelegate.swift in Sources */,
+				F6DC8D9028D49464006663A9 /* TrafficLightStateManager.swift in Sources */,
+				F6DC8D8E28D49394006663A9 /* TrafficLightState.swift in Sources */,
 				F6DC8D7A28D47FE9006663A9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +322,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +350,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
