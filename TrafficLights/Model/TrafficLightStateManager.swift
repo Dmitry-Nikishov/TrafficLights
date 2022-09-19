@@ -8,13 +8,29 @@
 import Foundation
 
 typealias TrafficLightStateChangeHandler = (TrafficLightState) -> Void
+typealias TrafficLightStateChangeUiAction = () -> Void
 
 class TrafficLightStateManager {
     private var currentState = TrafficLightState.turnOff
+    private var wasCalled = false
     
-    var handler: TrafficLightStateChangeHandler?
+    var isStarted: Bool {
+        get {
+            return wasCalled
+        }
+    }
+    
+    var handler: TrafficLightStateChangeHandler? {
+        didSet {
+            handler?(currentState)
+        }
+    }
     
     func nextLight() {
+        if wasCalled == false {
+            wasCalled.toggle()
+        }
+        
         currentState.nextWithoutOff()
         handler?(currentState)
     }
